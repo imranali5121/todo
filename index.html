@@ -35,8 +35,16 @@
             padding: 10px;
             background-color: rgb(138, 157, 255);
         }
-        .todo-container>p{
+        button{
+            width: 100%;
+        }
+        #todo-container>p{
             background-color: aquamarine;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
         }
     </style>
 </head>
@@ -50,9 +58,10 @@
             <br>
             <br>
             <button onclick="addTodo()">Submit</button>
+            <div id="todo-container">
+            </div>
         </div>
-        <div id="todo-container">
-        </div>
+       
     </div>
     <script src="./app.js"></script>
 </body>

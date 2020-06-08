@@ -33,6 +33,7 @@ function onDelete(i) {
 function onEdit(i) {
     var element = todos[i];
     input.value = element.title;
+    input.focus();
     editIndex = i
 }
 
