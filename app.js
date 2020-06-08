@@ -9,8 +9,8 @@ function render() {
     for (var i = 0; i < todos.length; i++) {
         var element = todos[i];
         container.innerHTML += `<p>${element.title} 
-        <button onclick="onDelete(${i})">Delete</button>
-        <button onclick="onEdit(${i})">edit</button>
+       <i class="fa fa-trash" onclick="onDelete(${i})"></i>
+       <i class="fa fa-edit" onclick="onEdit(${i})"></i>
         </p>`
     }
 }
